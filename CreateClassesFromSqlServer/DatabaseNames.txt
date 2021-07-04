@@ -1,0 +1,8 @@
+﻿SELECT TableName = DB_NAME(s_mf.database_id)
+FROM sys.master_files s_mf
+WHERE s_mf.state = 0 -- ONLINE
+      AND HAS_DBACCESS(DB_NAME(s_mf.database_id)) = 1
+      AND DB_NAME(s_mf.database_id) NOT IN('master', 'tempdb', 'model', 'msdb')
+AND DB_NAME(s_mf.database_id) NOT LIKE 'ReportServer%'
+GROUP BY s_mf.database_id
+ORDER BY 1;
