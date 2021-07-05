@@ -1,6 +1,6 @@
 # About
 
-![img](assets/classGen.png)
+![img](assets/classGenScreenShot.png)
 
 Supports VB.NET and C# (written in C#)
 
