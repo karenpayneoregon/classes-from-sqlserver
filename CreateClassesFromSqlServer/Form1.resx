@@ -60,18 +60,18 @@
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="CreateButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAC3SURBVDhPpZExCoNAEEU9R07gPTxPLiCkDHiAHCGVZUrLgIWQWhDS5Q7bjv7FP+y4i0YdeOzM
-        7P+fFTMROUVyuQc7TBXOzjkh3LF0ZhMSGt+3i/YA96sBELX3XH7d0wRg/jwKDSHGDCiGMXXifkL1kZlA
-        jJcMr3Jp9tATBUBMvk3lxX19NfvVAHLoBYBmmpbnHKB6YwYQbP2FrQDzKQwI8BrqjRnFy1kYGVnqYXOU
-        5HIPyeX/SDYCumAGBkGjHCgAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAALdJREFUOE+l
+        kTEKg0AQRT1HTuA9PE8uIKQMeIAcIZVlSsuAhZBaENLlDtuO/sU/7LiLRh147Mzs/58VMxE5RXK5BztM
+        Fc7OOSHcsXRmExIa37eL9gD3qwEQtfdcft3TBGD+PAoNIcYMKIYxdeJ+QvWRmUCMlwyvcmn20BMFQEy+
+        TeXFfX01+9UAcugFgGaaluccoHpjBhBs/YWtAPMpDAjwGuqNGcXLWRgZWephc5Tkcg/J5f9INgK6YAYG
+        QaMcKAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="RemoveClassesFolderButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAqSURBVDhPYxgFgw18+/btP7EYqgUVgCScnJwIYtoaQCyG
-        ahkFgwAwMAAAgq6EtQEoiOcAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAACpJREFUOE9jGAWDDXz79u0/sRiqBRWAJJycnAhi2hpALIZqGQWDADAwAACCroS1
+        ASiI5wAAAABJRU5ErkJggg==
 </value>
   </data>
 </root>

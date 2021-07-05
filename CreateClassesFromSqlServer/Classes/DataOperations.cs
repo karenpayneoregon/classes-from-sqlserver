@@ -87,12 +87,13 @@ namespace CreateClassesFromSqlServer.Classes
                         Directory.CreateDirectory(directoryName);
                     }
 
-                    if (File.Exists(Path.Combine(directoryName, fileName)))
+                    var path = Path.Combine(directoryName, fileName);
+                    if (File.Exists(path))
                     {
-                        File.Delete(Path.Combine(directoryName, fileName));
+                        File.Delete(path);
                     }
 
-                    File.WriteAllText(Path.Combine(directoryName, fileName), code);
+                    File.WriteAllText(path, code);
 
                 }
 

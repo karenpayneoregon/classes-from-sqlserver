@@ -35,6 +35,7 @@ namespace CreateClassesFromSqlServer
             this.CreatedListBox = new System.Windows.Forms.ListBox();
             this.RemoveClassesFolderButton = new System.Windows.Forms.Button();
             this.LanguageComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CreateButton
@@ -62,7 +63,7 @@ namespace CreateClassesFromSqlServer
             // 
             this.CreatedListBox.FormattingEnabled = true;
             this.CreatedListBox.ItemHeight = 15;
-            this.CreatedListBox.Location = new System.Drawing.Point(329, 86);
+            this.CreatedListBox.Location = new System.Drawing.Point(329, 70);
             this.CreatedListBox.Name = "CreatedListBox";
             this.CreatedListBox.Size = new System.Drawing.Size(322, 154);
             this.CreatedListBox.TabIndex = 2;
@@ -88,11 +89,21 @@ namespace CreateClassesFromSqlServer
             this.LanguageComboBox.Size = new System.Drawing.Size(132, 23);
             this.LanguageComboBox.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(329, 228);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(231, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Double click name above to open in folder";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 252);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LanguageComboBox);
             this.Controls.Add(this.RemoveClassesFolderButton);
             this.Controls.Add(this.CreatedListBox);
@@ -103,6 +114,7 @@ namespace CreateClassesFromSqlServer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Generator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -113,6 +125,7 @@ namespace CreateClassesFromSqlServer
         private System.Windows.Forms.ListBox CreatedListBox;
         private System.Windows.Forms.Button RemoveClassesFolderButton;
         private System.Windows.Forms.ComboBox LanguageComboBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
