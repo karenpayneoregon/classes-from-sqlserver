@@ -23,6 +23,16 @@ namespace CreateClassesFromSqlServer
             DataOperations.OutputFolder = "Classes";
 
             Shown += OnShown;
+            CreatedListBox.MouseDoubleClick += CreatedListBoxOnMouseDoubleClick;
+        }
+
+        private void CreatedListBoxOnMouseDoubleClick(object? sender, MouseEventArgs e)
+        {
+            var directory = Path.Combine(DataOperations.OutputFolder, CreatedListBox.Text);
+            if (Directory.Exists(directory))
+            {
+                Process.Start("explorer.exe", directory);
+            }
         }
 
         private async void OnShown(object? sender, EventArgs e)

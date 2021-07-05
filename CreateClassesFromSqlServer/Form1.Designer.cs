@@ -29,6 +29,7 @@ namespace CreateClassesFromSqlServer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.CreateButton = new System.Windows.Forms.Button();
             this.DatabaseNamesListBox = new System.Windows.Forms.ListBox();
             this.CreatedListBox = new System.Windows.Forms.ListBox();
@@ -38,9 +39,11 @@ namespace CreateClassesFromSqlServer
             // 
             // CreateButton
             // 
+            this.CreateButton.Image = ((System.Drawing.Image)(resources.GetObject("CreateButton.Image")));
+            this.CreateButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CreateButton.Location = new System.Drawing.Point(329, 12);
             this.CreateButton.Name = "CreateButton";
-            this.CreateButton.Size = new System.Drawing.Size(116, 23);
+            this.CreateButton.Size = new System.Drawing.Size(132, 23);
             this.CreateButton.TabIndex = 0;
             this.CreateButton.Text = "Run/Create";
             this.CreateButton.UseVisualStyleBackColor = true;
@@ -66,9 +69,11 @@ namespace CreateClassesFromSqlServer
             // 
             // RemoveClassesFolderButton
             // 
-            this.RemoveClassesFolderButton.Location = new System.Drawing.Point(535, 12);
+            this.RemoveClassesFolderButton.Image = ((System.Drawing.Image)(resources.GetObject("RemoveClassesFolderButton.Image")));
+            this.RemoveClassesFolderButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoveClassesFolderButton.Location = new System.Drawing.Point(519, 12);
             this.RemoveClassesFolderButton.Name = "RemoveClassesFolderButton";
-            this.RemoveClassesFolderButton.Size = new System.Drawing.Size(116, 23);
+            this.RemoveClassesFolderButton.Size = new System.Drawing.Size(132, 23);
             this.RemoveClassesFolderButton.TabIndex = 3;
             this.RemoveClassesFolderButton.Text = "Remove classes";
             this.RemoveClassesFolderButton.UseVisualStyleBackColor = true;
@@ -80,7 +85,7 @@ namespace CreateClassesFromSqlServer
             this.LanguageComboBox.FormattingEnabled = true;
             this.LanguageComboBox.Location = new System.Drawing.Point(329, 41);
             this.LanguageComboBox.Name = "LanguageComboBox";
-            this.LanguageComboBox.Size = new System.Drawing.Size(121, 23);
+            this.LanguageComboBox.Size = new System.Drawing.Size(132, 23);
             this.LanguageComboBox.TabIndex = 4;
             // 
             // Form1
