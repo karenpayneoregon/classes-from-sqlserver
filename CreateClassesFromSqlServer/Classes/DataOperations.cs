@@ -35,8 +35,9 @@ namespace CreateClassesFromSqlServer.Classes
         {
             try
             {
-                //var classQuery = File.ReadAllText("ClassQueryPlain.txt");
-                var classQuery = File.ReadAllText("ClassQueryPlainVb.txt");
+                var classQuery = Language == Language.Sharp ? 
+                    File.ReadAllText("ClassQueryPlain.txt") : 
+                    File.ReadAllText("ClassQueryPlainVb.txt");
                 
                 var fileExtension = Language == Language.Sharp ? ".cs" : ".vb";
                 
