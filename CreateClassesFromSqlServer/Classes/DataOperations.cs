@@ -22,6 +22,8 @@ namespace CreateClassesFromSqlServer.Classes
         /// </summary>
         public static string OutputFolder { get; set; }
 
+        public static Language Language { get; set; }
+
         /// <summary>
         /// Iterate <see cref="Database"/> tables, create classes from
         /// SQL in the file ClassQuery.txt or ClassQueryPlain.txt
@@ -33,7 +35,11 @@ namespace CreateClassesFromSqlServer.Classes
         {
             try
             {
-                var classQuery = File.ReadAllText("ClassQueryPlain.txt");
+                //var classQuery = File.ReadAllText("ClassQueryPlain.txt");
+                var classQuery = File.ReadAllText("ClassQueryPlainVb.txt");
+                
+                var fileExtension = Language == Language.Sharp ? ".cs" : ".vb";
+                
 
                 using var cn = new SqlConnection($"Server={Server};Database={Database};Integrated Security=true");
 
@@ -60,12 +66,12 @@ namespace CreateClassesFromSqlServer.Classes
                         tableName = row["TABLE_SCHEMA"] + "." + row["TABLE_NAME"];
                     }
 
-                    var fileName = tableName + ".cs";
+                    var fileName = tableName + fileExtension;
 
                     var baseFileName = Path.GetFileNameWithoutExtension(fileName);
                     baseFileName = baseFileName.Replace(".", "");
 
-                    fileName = baseFileName + ".cs";
+                    fileName = baseFileName + fileExtension;
 
                     string sqlStatement = $"declare @TableName sysname = '{tableName}'{classQuery}";
 

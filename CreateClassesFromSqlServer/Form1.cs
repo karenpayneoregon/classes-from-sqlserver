@@ -29,6 +29,7 @@ namespace CreateClassesFromSqlServer
         {
             _databaseBindingSource.DataSource = await DataOperations.DatabaseNameList();
             DatabaseNamesListBox.DataSource = _databaseBindingSource;
+            LanguageComboBox.DataSource = Helpers.Languages;
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace CreateClassesFromSqlServer
         private void CreateButton_Click(object sender, EventArgs e)
         {
             DataOperations.Database = DatabaseNamesListBox.Text;
-            
+            DataOperations.Language = ((ComboLanguage) LanguageComboBox.SelectedItem).Language;
 
             if (CreatedListBox.Items.Contains(DatabaseNamesListBox.Text))
             {

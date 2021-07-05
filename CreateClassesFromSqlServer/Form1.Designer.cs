@@ -33,6 +33,7 @@ namespace CreateClassesFromSqlServer
             this.DatabaseNamesListBox = new System.Windows.Forms.ListBox();
             this.CreatedListBox = new System.Windows.Forms.ListBox();
             this.RemoveClassesFolderButton = new System.Windows.Forms.Button();
+            this.LanguageComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // CreateButton
@@ -58,7 +59,7 @@ namespace CreateClassesFromSqlServer
             // 
             this.CreatedListBox.FormattingEnabled = true;
             this.CreatedListBox.ItemHeight = 15;
-            this.CreatedListBox.Location = new System.Drawing.Point(329, 51);
+            this.CreatedListBox.Location = new System.Drawing.Point(329, 86);
             this.CreatedListBox.Name = "CreatedListBox";
             this.CreatedListBox.Size = new System.Drawing.Size(322, 154);
             this.CreatedListBox.TabIndex = 2;
@@ -73,11 +74,21 @@ namespace CreateClassesFromSqlServer
             this.RemoveClassesFolderButton.UseVisualStyleBackColor = true;
             this.RemoveClassesFolderButton.Click += new System.EventHandler(this.RemoveClassFolderButton_Click_1);
             // 
+            // LanguageComboBox
+            // 
+            this.LanguageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.LanguageComboBox.FormattingEnabled = true;
+            this.LanguageComboBox.Location = new System.Drawing.Point(329, 41);
+            this.LanguageComboBox.Name = "LanguageComboBox";
+            this.LanguageComboBox.Size = new System.Drawing.Size(121, 23);
+            this.LanguageComboBox.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 252);
+            this.Controls.Add(this.LanguageComboBox);
             this.Controls.Add(this.RemoveClassesFolderButton);
             this.Controls.Add(this.CreatedListBox);
             this.Controls.Add(this.DatabaseNamesListBox);
@@ -96,6 +107,7 @@ namespace CreateClassesFromSqlServer
         private System.Windows.Forms.ListBox DatabaseNamesListBox;
         private System.Windows.Forms.ListBox CreatedListBox;
         private System.Windows.Forms.Button RemoveClassesFolderButton;
+        private System.Windows.Forms.ComboBox LanguageComboBox;
     }
 }
 

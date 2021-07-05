@@ -12,6 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ClassQueryPlainVb.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ClassQueryPlain.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
