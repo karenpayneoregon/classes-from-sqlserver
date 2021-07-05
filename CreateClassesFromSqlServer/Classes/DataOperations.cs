@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace CreateClassesFromSqlServer.Classes
 {
+    /// <summary>
+    /// Methods for all data operations against SQL-Server
+    /// </summary>
     public class DataOperations
     {
         /// <summary>
@@ -18,18 +21,21 @@ namespace CreateClassesFromSqlServer.Classes
         /// </summary>
         public static string Database { get; set; }
         /// <summary>
-        /// Location to create classes
+        /// Base folder location to create classes
         /// </summary>
         public static string OutputFolder { get; set; }
-
+        /// <summary>
+        /// Create classes for either C# or VB.NET
+        /// </summary>
         public static Language Language { get; set; }
 
         /// <summary>
         /// Iterate <see cref="Database"/> tables, create classes from
         /// SQL in the file ClassQuery.txt or ClassQueryPlain.txt
         ///
-        /// ClassQuery.txt          Will show how to add an attribute to each property
-        /// ClassQueryPlain.txt     Will create a plain vanilla class
+        /// ClassQuery.txt          Will show how to add an attribute to each property  C#
+        /// ClassQueryPlain.txt     Will create a plain vanilla class                   C#
+        /// ClassQueryPlainVb.txt   Will create a plain vanilla class                   VB.NET
         /// </summary>
         public static (bool, Exception) Create()
         {
@@ -140,6 +146,9 @@ namespace CreateClassesFromSqlServer.Classes
         /// Get table names under <see cref="Server"/> for <see cref="Database"/>
         /// </summary>
         /// <returns>List of table names</returns>
+        /// <remarks>
+        /// Unused in this project
+        /// </remarks>
         public static async Task<List<string>> TableNamesList()
         {
             var tableNameList = new List<string>();

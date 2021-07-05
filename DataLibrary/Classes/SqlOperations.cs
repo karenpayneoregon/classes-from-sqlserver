@@ -21,7 +21,14 @@ namespace DataLibrary.Classes
         /// <summary>
         /// Read top 10 countries 
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///     Success
+        ///     Any runtime exception
+        ///     List of countries
+        /// </returns>
+        /// <remarks>
+        /// For a real application there would be a parameter to get all or some records
+        /// </remarks>
         public static (bool, Exception, List<Countries>) GetCountriesList()
         {
             try
@@ -41,6 +48,7 @@ namespace DataLibrary.Classes
                 }
 
                 return (true, null, countriesList);
+                
             }
             catch (Exception exception)
             {
