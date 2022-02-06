@@ -1,8 +1,15 @@
-# About
+# Classes from SQL-Server for C# and VB.NET
+
+
+Code presented provides a developer with a tool to generate classes from a database. 
+
+An alternate is to install the following Visual Studio [extension](http://www.gui-innovations.com/visual-studio-add-ins/paste-sql-classes.html) which requires a developer to open SQL-Server Management Studio (SSMS), select a table, right click and select CREATE To Clipboard and repeat for each table.
+
+While the code in this repository allow a developer to create classes for an entire database at the click of a button and places these classes in a folder, ready to use but recommend adding your namespace to each class.
 
 ![img](assets/classGenScreenShot.png)
 
-Supports VB.NET and C# (written in C#)
+Supports `VB.NET` and `C#` (written in C#)
 
 ![img](assets/Figure1.png)
 
