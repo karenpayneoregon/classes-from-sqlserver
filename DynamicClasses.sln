@@ -14,9 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class projects", "Class pro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test projects", "Test projects", "{393090FD-84D2-4680-BAE9-3B9EC9D169C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{DEBA65BB-9AC3-41EB-8A0E-5D1853A699DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{DEBA65BB-9AC3-41EB-8A0E-5D1853A699DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibraryTestProject", "DataLibraryTestProject\DataLibraryTestProject.csproj", "{205C7E12-3A12-4810-8E6F-DF7C0D11041B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLibraryTestProject", "DataLibraryTestProject\DataLibraryTestProject.csproj", "{205C7E12-3A12-4810-8E6F-DF7C0D11041B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
